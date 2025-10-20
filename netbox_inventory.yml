@@ -1,6 +1,6 @@
 # netbox_inventory.yml
 plugin: netbox
-api_endpoint: http://192.168.3.172:8000/
+api_endpoint: http://192.168.3.172:8000
 token: 9d4ba55384e148382b29ffd39fc6ec733a65345a
 validate_certs: false
 
