@@ -1,0 +1,5 @@
+interface Gi2
+ ip address {{ ansible_host.address.split('/')[0] }} 255.255.255.0
+ description "Production line"
+ no shutdwon
+!

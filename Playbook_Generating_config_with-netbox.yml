@@ -1,0 +1,10 @@
+- name: Create config using netbox
+  hosts: device_roles_Router
+  gather_facts: False
+  connection: local
+
+  tasks:
+    - name: "Generate configs using data obtained from netbox"
+      template:
+        src: "./templates/config_template.j2"
+        dest: "./output/{{ inventory_hostname }}_{{ lookup('pipe', 'date +%Y-%m-%d_%Hh-%Mm-%Ss') }}.cfg"
